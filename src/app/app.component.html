@@ -1,11 +1,1 @@
-<h1>Hello world from {{title}}</h1>
-
-<div class="directives" *ngIf="listOfMovies.length>6">
-  {{mainChar}}
-</div>
-
-<div class="list-of-movies" [ngStyle]="{'background':shouldBeRed?'red':'blue'}">
-  <div class="movie" *ngFor="let movie of listOfMovies">{{movie}}</div>
-</div>
-
-<button (click)="shouldBeRed=!shouldBeRed">change</button>
+<app-movies></app-movies>
